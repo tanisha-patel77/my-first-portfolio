@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/portfolio.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myportfolio/static/IMG_6229.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/portfolio/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="first attempt of a portfolio" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,11 +104,32 @@
       <option name="presentableId" value="Default" />
       <updated>1791925100338</updated>
       <workItem from="1791925101372" duration="214000" />
-      <workItem from="1791925327827" duration="1876000" />
+      <workItem from="1791925327827" duration="2216000" />
     </task>
+    <task id="LOCAL-00001" summary="first attempt of a portfolio">
+      <option name="closed" value="true" />
+      <created>1791927461859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1791927461859</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first attempt of a portfolio">
+      <option name="closed" value="true" />
+      <created>1791927510693</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791927510693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first attempt of a portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="first attempt of a portfolio" />
   </component>
 </project>
