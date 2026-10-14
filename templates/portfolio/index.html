@@ -1,156 +1,86 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanisha Patel — Portfolio</title>
+    <title>Home - Tanisha Patel</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font: Plus Jakarta Sans -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen">
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
-<!-- NAVIGATION -->
-<header class="sticky top-0 bg-slate-950 border-b border-slate-800 z-50">
-    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" class="font-bold text-lg text-purple-400">Tanisha Patel</a>
-        <nav class="flex gap-6 text-sm text-slate-300 font-medium">
-            <a href="#about" class="hover:text-purple-400">About</a>
-            <a href="#skills" class="hover:text-purple-400">Skills</a>
-            <a href="#projects" class="hover:text-purple-400">Projects</a>
-            <a href="#contact" class="hover:text-purple-400">Contact</a>
-        </nav>
+<!-- Navbar -->
+<nav class="flex justify-between items-center px-8 py-6 max-w-4xl mx-auto w-full">
+    <h1 class="text-xl font-bold tracking-wider text-purple-400">Tanisha Patel</h1>
+    <div class="space-x-6 text-sm">
+        <a href="index.html" class="text-purple-400 font-medium">Home</a>
+        <a href="about.html" class="hover:text-purple-400 transition">About</a>
+        <a href="contact.html" class="hover:text-purple-400 transition">Contact</a>
     </div>
-</header>
+</nav>
 
-<main class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+<!-- Hero Section -->
+<main class="max-w-4xl mx-auto px-8 py-10 space-y-10 w-full">
 
-    <!-- HERO SECTION -->
-    <section class="flex flex-col-reverse md:flex-row items-center justify-between gap-10 py-8">
-        <div class="space-y-4 max-w-xl">
-                <span class="inline-block px-3 py-1 bg-purple-950 text-purple-300 border border-purple-800 rounded-full text-xs font-medium">
-                    Aspiring Software Engineer
-                </span>
-            <h1 class="text-4xl sm:text-5xl font-bold text-white">
-                Hi, I'm <span class="text-purple-400">Tanisha Patel</span>
-            </h1>
-            <p class="text-slate-400 text-base">
-                Student passionate about computer science, problem-solving, networking, router configuration, and web design. Dedicated to building efficient solutions.
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="space-y-4 max-w-lg">
+            <!-- Achievement Badge -->
+            <div class="inline-block bg-purple-950/60 border border-purple-500/40 text-purple-300 text-xs px-3 py-1 rounded-full font-semibold">
+                🎓 95% A* in IGCSE Computer Science
+            </div>
+
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+                Hello, I'm <span class="text-purple-400">Tanisha Patel</span>
+            </h2>
+
+            <p class="text-gray-300 text-base leading-relaxed">
+                I'm a 17-year-old student living in Rwanda. From public speaking and event hosting to building hardware projects like Arduino car speed simulations, I know exactly what I want to do.
             </p>
-            <div class="flex gap-4 pt-2">
-                <a href="#contact" class="bg-purple-600 hover:bg-purple-500 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition">
-                    Get In Touch
+
+            <div class="pt-2 flex gap-4">
+                <a href="about.html" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-full font-medium text-sm transition">
+                    Read My Story ↗
                 </a>
-                <a href="https://github.com/tanisha-patel77" target="_blank" class="border border-slate-700 hover:border-slate-500 text-slate-300 font-semibold text-sm px-5 py-2.5 rounded-lg transition">
-                    GitHub Profile
+                <a href="contact.html" class="border border-purple-500/40 hover:border-purple-400 text-purple-300 px-5 py-2.5 rounded-full font-medium text-sm transition">
+                    Get in Touch
                 </a>
             </div>
         </div>
 
-        <!-- PROFILE PHOTO PLACEHOLDER -->
-        <div>
-            <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden border-2 border-purple-500/30">
-                <img src="{% static 'POTFOLIO_IMAGE.png' %}" alt="Tanisha Patel" class="w-full h-full object-cover">
+        <!-- Profile Picture Placeholder -->
+        <div class="w-48 h-48 rounded-full border-2 border-purple-500 overflow-hidden bg-gray-900 flex items-center justify-center text-gray-500 shrink-0">
+            <div class="w-48 h-48 rounded-full border-2 border-purple-500 overflow-hidden shrink-0">
+                <img src="static/PORTFOLIO_IMAGE.png" alt="Tanisha Patel" class="w-full h-full object-cover">
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="space-y-4 border-t border-slate-800 pt-10">
-        <h2 class="text-2xl font-bold text-white">About Me</h2>
-        <div class="flex flex-col md:flex-row gap-6">
-            <div class="flex-1 bg-slate-900 border border-slate-800 p-6 rounded-xl space-y-3">
-                <p class="text-slate-300 text-sm">
-                    I am a computer science student driven by the problem-solving aspect of programming. Beyond writing code, I have a strong interest in computer networking, router configuration, and clean web development.
-                </p>
-                <p class="text-slate-400 text-sm">
-                    I love exchanging technical ideas, breaking down complex concepts, and helping peers understand code and logic effectively.
-                </p>
-            </div>
-            <div class="w-full md:w-1/3 bg-slate-900 border border-slate-800 p-6 rounded-xl flex items-center justify-center text-center">
-                <p class="text-purple-400 font-semibold text-base italic">"Better solutions through problem solving."</p>
-            </div>
+    <!-- Quick Highlights Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-gray-900">
+        <div class="bg-gray-900/60 border border-gray-800 p-4 rounded-xl space-y-1">
+            <span class="text-xs text-purple-400 font-semibold">ACADEMICS</span>
+            <h3 class="font-bold text-gray-200">95% A* Computer Science</h3>
+            <p class="text-gray-400 text-xs">Solid foundation in computer science principles and programming logic.</p>
         </div>
-    </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="space-y-6 border-t border-slate-800 pt-10">
-        <h2 class="text-2xl font-bold text-white">Technical Skills</h2>
-        <div class="flex flex-wrap gap-4">
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">Python</p>
-                <p class="text-slate-500 text-xs mt-1">Programming</p>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">HTML & CSS</p>
-                <p class="text-slate-500 text-xs mt-1">Web Basics</p>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">JavaScript</p>
-                <p class="text-slate-500 text-xs mt-1">Web Dev</p>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">Git & GitHub</p>
-                <p class="text-slate-500 text-xs mt-1">Version Control</p>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">SQL / Databases</p>
-                <p class="text-slate-500 text-xs mt-1">Data Storage</p>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">Networking</p>
-                <p class="text-slate-500 text-xs mt-1">Router Config</p>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">Web Design</p>
-                <p class="text-slate-500 text-xs mt-1">UI Layouts</p>
-            </div>
-            <div class="bg-slate-900 border border-slate-800 p-4 rounded-lg w-36">
-                <p class="text-white font-medium text-sm">Problem Solving</p>
-                <p class="text-slate-500 text-xs mt-1">Core Skill</p>
-            </div>
+        <div class="bg-gray-900/60 border border-gray-800 p-4 rounded-xl space-y-1">
+            <span class="text-xs text-purple-400 font-semibold">LEADERSHIP</span>
+            <h3 class="font-bold text-gray-200">Event Hosting & MUN</h3>
+            <p class="text-gray-400 text-xs">Experienced in public speaking, debating, and hosting school events.</p>
         </div>
-    </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="space-y-6 border-t border-slate-800 pt-10">
-        <h2 class="text-2xl font-bold text-white">Featured Projects</h2>
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl space-y-3">
-            <div class="flex items-center justify-between">
-                <h3 class="text-lg font-bold text-white">School Project</h3>
-                <span class="text-xs bg-slate-800 text-purple-300 border border-slate-700 px-3 py-1 rounded-full">Completed</span>
-            </div>
-            <p class="text-slate-400 text-sm">
-                A comprehensive project built to apply fundamentals in programming, logic design, and problem solving. Demonstrates core concepts learned throughout coursework.
-            </p>
+        <div class="bg-gray-900/60 border border-gray-800 p-4 rounded-xl space-y-1">
+            <span class="text-xs text-purple-400 font-semibold">HARDWARE</span>
+            <h3 class="font-bold text-gray-200">Arduino Projects</h3>
+            <p class="text-gray-400 text-xs">Built car speed detection simulations inspired by Sophia in Rwanda.</p>
         </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="space-y-6 border-t border-slate-800 pt-10">
-        <h2 class="text-2xl font-bold text-white">Contact</h2>
-        <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-            <div class="space-y-1">
-                <p class="text-white font-medium text-sm">Let's Connect</p>
-                <p class="text-slate-400 text-xs">Always interested in collaboration and learning opportunities.</p>
-            </div>
-            <div class="space-y-1 text-sm text-slate-300">
-                <p><span class="text-purple-400 font-semibold">Email:</span> tanishapatel7733@gmail.com</p>
-                <p><span class="text-purple-400 font-semibold">GitHub:</span> github.com/tanisha-patel77</p>
-            </div>
-        </div>
-    </section>
+    </div>
 
 </main>
 
-<!-- FOOTER -->
-<footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-500">
-    <p>© 2026 Tanisha Patel. All rights reserved.</p>
+<!-- Footer -->
+<footer class="text-center py-6 text-xs text-gray-500 border-t border-gray-900">
+    <p>© 2026 Tanisha Patel. All rights reserved. ✨</p>
 </footer>
 
 </body>
