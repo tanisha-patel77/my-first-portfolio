@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="first attempt of a portfolio">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="first attempt of a portfolio upadated the allowedd hosts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,18 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "tanisha-patel77"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tanisha-patel77&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tanisha-patel77/my-first-portfolio.git",
-    "accountId": "52dfb2bf-aee8-47ec-b352-421fb5e55fa2"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tanisha-patel77/my-first-portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;52dfb2bf-aee8-47ec-b352-421fb5e55fa2&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4,
   &quot;fromUser&quot;: false
@@ -120,6 +118,7 @@
       <workItem from="1791925101372" duration="214000" />
       <workItem from="1791925327827" duration="2773000" />
       <workItem from="1791957085288" duration="1151000" />
+      <workItem from="1791972025257" duration="837000" />
     </task>
     <task id="LOCAL-00001" summary="first attempt of a portfolio">
       <option name="closed" value="true" />
@@ -161,7 +160,23 @@
       <option name="project" value="LOCAL" />
       <updated>1791957193408</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="first attempt of a portfolio">
+      <option name="closed" value="true" />
+      <created>1791972083136</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1791972083136</updated>
+    </task>
+    <task id="LOCAL-00007" summary="first attempt of a portfolio upadated the allowedd hosts">
+      <option name="closed" value="true" />
+      <created>1791972232881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1791972232881</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +184,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first attempt of a portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="first attempt of a portfolio" />
+    <MESSAGE value="updated the allowed host" />
+    <MESSAGE value="first attempt of a portfolio upadated the allowedd hosts" />
+    <option name="LAST_COMMIT_MESSAGE" value="first attempt of a portfolio upadated the allowedd hosts" />
   </component>
 </project>
