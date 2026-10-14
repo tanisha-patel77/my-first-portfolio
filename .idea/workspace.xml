@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="upadate the images since they are not seen" />
+    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="upadate the static thing in the settings">
+      <change afterPath="$PROJECT_DIR$/myportfolio/static/img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +127,7 @@
       <workItem from="1791987653351" duration="300000" />
       <workItem from="1791988523954" duration="51000" />
       <workItem from="1792001732520" duration="943000" />
-      <workItem from="1792012361367" duration="3087000" />
+      <workItem from="1792012361367" duration="4590000" />
     </task>
     <task id="LOCAL-00001" summary="first attempt of a portfolio">
       <option name="closed" value="true" />
@@ -302,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792015455480</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="upadate the static thing in the settings">
+      <option name="closed" value="true" />
+      <created>1792015860545</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1792015860545</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +337,7 @@
     <MESSAGE value="opdated alll pages by adding logo and making it responsive" />
     <MESSAGE value="upadate the image link" />
     <MESSAGE value="upadate the images since they are not seen" />
-    <option name="LAST_COMMIT_MESSAGE" value="upadate the images since they are not seen" />
+    <MESSAGE value="upadate the static thing in the settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="upadate the static thing in the settings" />
   </component>
 </project>
