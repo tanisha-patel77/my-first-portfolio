@@ -13,9 +13,9 @@
 <nav class="flex justify-between items-center px-8 py-6 max-w-4xl mx-auto w-full">
     <h1 class="text-xl font-bold tracking-wider text-purple-400">Tanisha Patel</h1>
     <div class="space-x-6 text-sm">
-        <a href="index.html" class="text-purple-400 font-medium">Home</a>
-        <a href="about.html" class="hover:text-purple-400 transition">About</a>
-        <a href="contact.html" class="hover:text-purple-400 transition">Contact</a>
+        <a href="{% url 'home' %}" class="text-purple-400 font-medium">Home</a>
+        <a href="{% url 'aboutme' %}" class="hover:text-purple-400 transition">About</a>
+        <a href="{% url 'contact' %}" class="hover:text-purple-400 transition">Contact</a>
     </div>
 </nav>
 
@@ -38,10 +38,10 @@
             </p>
 
             <div class="pt-2 flex gap-4">
-                <a href="about.html" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-full font-medium text-sm transition">
+                <a href="{% url 'aboutme' %}" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-full font-medium text-sm transition">
                     Read My Story ↗
                 </a>
-                <a href="contact.html" class="border border-purple-500/40 hover:border-purple-400 text-purple-300 px-5 py-2.5 rounded-full font-medium text-sm transition">
+                <a href="{% url 'contact' %}" class="border border-purple-500/40 hover:border-purple-400 text-purple-300 px-5 py-2.5 rounded-full font-medium text-sm transition">
                     Get in Touch
                 </a>
             </div>

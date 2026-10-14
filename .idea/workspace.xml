@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="first attempt of a portfolio upadated the PROFILE PICTURE">
-      <change afterPath="$PROJECT_DIR$/templates/portfolio/aboutme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/portfolio/contactme.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myportfolio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myportfolio/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio/index.html" afterDir="false" />
+    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="updated my html pages into smth better with linked pages">
+      <change beforePath="$PROJECT_DIR$/portfolio/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +121,7 @@
       <workItem from="1791925101372" duration="214000" />
       <workItem from="1791925327827" duration="2773000" />
       <workItem from="1791957085288" duration="1151000" />
-      <workItem from="1791972025257" duration="2263000" />
+      <workItem from="1791972025257" duration="2794000" />
     </task>
     <task id="LOCAL-00001" summary="first attempt of a portfolio">
       <option name="closed" value="true" />
@@ -192,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791973134989</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated my html pages into smth better with linked pages">
+      <option name="closed" value="true" />
+      <created>1791974843390</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1791974843390</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +206,7 @@
     <MESSAGE value="updated the allowed host" />
     <MESSAGE value="first attempt of a portfolio upadated the allowedd hosts" />
     <MESSAGE value="first attempt of a portfolio upadated the PROFILE PICTURE" />
-    <option name="LAST_COMMIT_MESSAGE" value="first attempt of a portfolio upadated the PROFILE PICTURE" />
+    <MESSAGE value="updated my html pages into smth better with linked pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated my html pages into smth better with linked pages" />
   </component>
 </project>
