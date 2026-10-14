@@ -4,82 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Tanisha Patel</title>
+    <title>Tanisha Patel | Future Software Engineer</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js for lightweight interactive components -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(168, 85, 247, 0.3);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 30px 2px rgba(168, 85, 247, 0.5);
+        }
+    </style>
 </head>
-<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
+<body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between selection:bg-purple-500 selection:text-white" x-data="{ tab: 'code' }">
 
 <!-- Navbar -->
-<nav class="flex justify-between items-center px-8 py-6 max-w-4xl mx-auto w-full">
-    <h1 class="text-xl font-bold tracking-wider text-purple-400">Tanisha Patel</h1>
-    <div class="space-x-6 text-sm">
-        <a href="{% url 'home' %}" class="text-purple-400 font-medium">Home</a>
+<nav class="flex justify-between items-center px-8 py-6 max-w-5xl mx-auto w-full">
+    <a href="{% url 'home' %}" class="text-xl font-black tracking-widest text-purple-400 hover:opacity-80 transition">
+        TANISHA<span class="text-white">.DEV</span>
+    </a>
+    <div class="space-x-6 text-sm font-medium">
+        <a href="{% url 'home' %}" class="text-purple-400 border-b-2 border-purple-400 pb-1">Home</a>
         <a href="{% url 'about_me' %}" class="hover:text-purple-400 transition">About</a>
         <a href="{% url 'contact' %}" class="hover:text-purple-400 transition">Contact</a>
     </div>
 </nav>
 
 <!-- Hero Section -->
-<main class="max-w-4xl mx-auto px-8 py-10 space-y-10 w-full">
+<main class="max-w-5xl mx-auto px-8 py-6 space-y-12 w-full">
 
-    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
-        <div class="space-y-4 max-w-lg">
-            <!-- Achievement Badge -->
-            <div class="inline-block bg-purple-950/60 border border-purple-500/40 text-purple-300 text-xs px-3 py-1 rounded-full font-semibold">
-                🎓 Future Software Engineer | 95% A* in IGCSE Computer Science
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+        <!-- Left Column: Bold Copy -->
+        <div class="lg:col-span-7 space-y-6">
+
+            <!-- Dynamic Status Badge -->
+            <div class="inline-flex items-center gap-2 bg-purple-950/80 border border-purple-500/50 text-purple-300 text-xs px-3.5 py-1.5 rounded-full font-semibold shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                <span>Future Software Engineer</span>
             </div>
 
-            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">
-                Hello, I'm <span class="text-purple-400">Tanisha Patel</span>
-            </h2>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none">
+                I build systems. <br>
+                <span class="bg-gradient-to-r from-purple-400 via-fuchsia-400 to-indigo-400 bg-clip-text text-transparent">
+                    I solve logic.
+                </span>
+            </h1>
 
-            <p class="text-gray-300 text-base leading-relaxed">
-                I'm a 17-year-old student living in Rwanda, deeply driven by a lifelong passion for technology. Everyone at my school knows how much I love computer science—it’s what I breathe and live every day! From building hardware projects and configuring networks to public speaking and leading school-wide initiatives, I am fully committed to shaping a future in software engineering.
+            <p class="text-gray-300 text-base sm:text-lg leading-relaxed font-normal">
+                Hey, I’m <strong class="text-white">Tanisha Patel</strong> — a 17-year-old developer based in Rwanda. With an <strong class="text-purple-300">A* (95%) in IGCSE Computer Science</strong>, I don't just study code; I build, host, configure networks, and solve complex hardware problems. Everyone at school knows my passion for tech — because I know <em class="not-italic font-semibold text-white">exactly</em> what I’m doing.
             </p>
 
-            <div class="pt-2 flex gap-4">
-                <a href="{% url 'about_me' %}" class="bg-purple-600 hover:bg-purple-700 text-white px-5 py-2.5 rounded-full font-medium text-sm transition">
-                    Read My Story ↗
+            <!-- Quick Action Buttons -->
+            <div class="pt-2 flex flex-wrap gap-4 items-center">
+                <a href="{% url 'about_me' %}" class="bg-purple-600 hover:bg-purple-500 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-lg shadow-purple-900/40 hover:scale-105 transition transform">
+                    Explore My Work 🚀
                 </a>
-                <a href="{% url 'contact' %}" class="border border-purple-500/40 hover:border-purple-400 text-purple-300 px-5 py-2.5 rounded-full font-medium text-sm transition">
-                    Get in Touch
+                <a href="{% url 'contact' %}" class="border border-gray-700 hover:border-purple-500/80 bg-gray-900/50 text-purple-300 hover:text-white px-6 py-3 rounded-xl font-semibold text-sm transition">
+                    Get In Touch ✉️
                 </a>
             </div>
         </div>
 
-        <!-- Profile Picture Fixed -->
-        <div class="w-48 h-48 rounded-full border-2 border-purple-500 overflow-hidden bg-gray-900 shrink-0">
-            <img src="{% static 'POTFOLIO_IMAGE.png' %}" alt="Tanisha Patel" class="w-full h-full object-cover">
+        <!-- Right Column: Interactive Profile & Photo Card -->
+        <div class="lg:col-span-5 flex justify-center">
+            <div class="relative group">
+                <!-- Decorative Glow Background -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+
+                <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-2 border-purple-500/50 bg-gray-900 shadow-2xl">
+                    <img src="{% static 'POTFOLIO_IMAGE.png' %}" alt="Tanisha Patel" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+
+                <!-- Floating Achievement Badge -->
+                <div class="absolute -bottom-4 -right-4 bg-gray-900/95 border border-purple-500/60 p-3.5 rounded-2xl shadow-xl backdrop-blur-md flex items-center gap-3">
+                    <div class="text-2xl">🏆</div>
+                    <div>
+                        <p class="text-xs font-bold text-purple-400">95% A* Score</p>
+                        <p class="text-[10px] text-gray-400">Computer Science</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
 
-    <!-- Quick Highlights Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-gray-900">
-        <div class="bg-gray-900/60 border border-gray-800 p-4 rounded-xl space-y-1">
-            <span class="text-xs text-purple-400 font-semibold">ACADEMICS</span>
-            <h3 class="font-bold text-gray-200">95% A* Computer Science</h3>
-            <p class="text-gray-400 text-xs">Excellence in coding logic, computational thinking, and software principles.</p>
+    <!-- Interactive Interactive Console / Playground Section -->
+    <div class="border border-gray-800 bg-gray-900/70 rounded-2xl p-6 backdrop-blur-xl glow-effect space-y-6">
+
+        <!-- Tab Selector Header -->
+        <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800 pb-4">
+            <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                <span class="text-xs text-gray-500 font-mono ml-2">tanisha@developer-desktop:~</span>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex gap-2 text-xs font-mono">
+                <button @click="tab = 'code'" :class="tab === 'code' ? 'bg-purple-600 text-white' : 'bg-gray-800 text-gray-400 hover:text-white'" class="px-3 py-1.5 rounded-lg transition font-semibold">
+                    // Profile.json
+                </button>
+                <button @click="tab = 'skills'" :class="tab === 'skills' ? 'bg-purple-600 text-white' : 'bg-gray-800 text-gray-400 hover:text-white'" class="px-3 py-1.5 rounded-lg transition font-semibold">
+                    // Tech Stack
+                </button>
+                <button @click="tab = 'impact'" :class="tab === 'impact' ? 'bg-purple-600 text-white' : 'bg-gray-800 text-gray-400 hover:text-white'" class="px-3 py-1.5 rounded-lg transition font-semibold">
+                    // School Impact
+                </button>
+            </div>
         </div>
 
-        <div class="bg-gray-900/60 border border-gray-800 p-4 rounded-xl space-y-1">
-            <span class="text-xs text-purple-400 font-semibold">LEADERSHIP</span>
-            <h3 class="font-bold text-gray-200">School Ambassador & Host</h3>
-            <p class="text-gray-400 text-xs">Active contributor to school events, podcasting, and MUN debates.</p>
+        <!-- Tab 1: Profile JSON View -->
+        <div x-show="tab === 'code'" class="font-mono text-sm leading-relaxed text-gray-300 overflow-x-auto p-2">
+            <p class="text-purple-400">{</p>
+            <p class="pl-4"><span class="text-purple-300">"name"</span>: <span class="text-green-400">"Tanisha Patel"</span>,</p>
+            <p class="pl-4"><span class="text-purple-300">"role"</span>: <span class="text-green-400">"Future Software Engineer"</span>,</p>
+            <p class="pl-4"><span class="text-purple-300">"location"</span>: <span class="text-green-400">"Rwanda"</span>,</p>
+            <p class="pl-4"><span class="text-purple-300">"status"</span>: <span class="text-green-400">"Determined, High-Performing & Passionate"</span>,</p>
+            <p class="pl-4"><span class="text-purple-300">"grade"</span>: <span class="text-green-400">"95% A* in IGCSE Computer Science"</span>,</p>
+            <p class="pl-4"><span class="text-purple-300">"passions"</span>: [<span class="text-green-400">"Software Engineering"</span>, <span class="text-green-400">"Hardware Simulations"</span>, <span class="text-green-400">"Networking"</span>, <span class="text-green-400">"Public Speaking"</span>]</p>
+            <p class="text-purple-400">}</p>
         </div>
 
-        <div class="bg-gray-900/60 border border-gray-800 p-4 rounded-xl space-y-1">
-            <span class="text-xs text-purple-400 font-semibold">TECH & HARDWARE</span>
-            <h3 class="font-bold text-gray-200">Networking & Arduino</h3>
-            <p class="text-gray-400 text-xs">Experienced in configuring routers, networking, and creative hardware simulations.</p>
+        <!-- Tab 2: Skills Badges Grid -->
+        <div x-show="tab === 'skills'" class="space-y-4">
+            <h3 class="text-sm font-semibold text-purple-400 tracking-wider uppercase">Proven Core Competencies</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div class="bg-gray-950/80 border border-purple-500/30 p-3 rounded-xl text-center">
+                    <p class="text-xs font-bold text-white">Algorithms & Logic</p>
+                    <p class="text-[10px] text-gray-400">95% A* Proficiency</p>
+                </div>
+                <div class="bg-gray-950/80 border border-purple-500/30 p-3 rounded-xl text-center">
+                    <p class="text-xs font-bold text-white">Router Configuration</p>
+                    <p class="text-[10px] text-gray-400">Networking & Setup</p>
+                </div>
+                <div class="bg-gray-950/80 border border-purple-500/30 p-3 rounded-xl text-center">
+                    <p class="text-xs font-bold text-white">Arduino Hardware</p>
+                    <p class="text-[10px] text-gray-400">Speed Detection Systems</p>
+                </div>
+                <div class="bg-gray-950/80 border border-purple-500/30 p-3 rounded-xl text-center">
+                    <p class="text-xs font-bold text-white">Frontend Web</p>
+                    <p class="text-[10px] text-gray-400">HTML & Tailwind CSS</p>
+                </div>
+                <div class="bg-gray-950/80 border border-purple-500/30 p-3 rounded-xl text-center">
+                    <p class="text-xs font-bold text-white">Public Speaking</p>
+                    <p class="text-[10px] text-gray-400">Event Host & MUN</p>
+                </div>
+                <div class="bg-gray-950/80 border border-purple-500/30 p-3 rounded-xl text-center">
+                    <p class="text-xs font-bold text-white">Problem Solving</p>
+                    <p class="text-[10px] text-gray-400">Logic & Troubleshooting</p>
+                </div>
+            </div>
         </div>
+
+        <!-- Tab 3: School Impact -->
+        <div x-show="tab === 'impact'" class="space-y-3 text-sm text-gray-300">
+            <div class="flex items-start gap-3 bg-gray-950/60 p-3.5 rounded-xl border border-gray-800">
+                <span class="text-lg">🎤</span>
+                <div>
+                    <h4 class="font-bold text-purple-300">Official Event Host & Presenter</h4>
+                    <p class="text-xs text-gray-400">Leading major ceremonies, hosting podcasts, and taking charge of school platforms.</p>
+                </div>
+            </div>
+            <div class="flex items-start gap-3 bg-gray-950/60 p-3.5 rounded-xl border border-gray-800">
+                <span class="text-lg">💻</span>
+                <div>
+                    <h4 class="font-bold text-purple-300">Go-To Computer Science Leader</h4>
+                    <p class="text-xs text-gray-400">Recognized school-wide for technical hardware help, networking knowledge, and logic design.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Live Impact Highlights -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+
+        <div class="bg-gray-900/60 border border-gray-800 p-6 rounded-2xl hover:border-purple-500/50 transition glow-hover space-y-2">
+            <span class="text-2xl">⚡</span>
+            <h3 class="font-bold text-gray-100 text-lg">Top Academic Rigor</h3>
+            <p class="text-gray-400 text-xs leading-relaxed">Scored 95% A* in Cambridge IGCSE CS, proving deep understanding of data structures, logic, and systems.</p>
+        </div>
+
+        <div class="bg-gray-900/60 border border-gray-800 p-6 rounded-2xl hover:border-purple-500/50 transition glow-hover space-y-2">
+            <span class="text-2xl">🛠️</span>
+            <h3 class="font-bold text-gray-100 text-lg">Hardware & Routing</h3>
+            <p class="text-gray-400 text-xs leading-relaxed">Built real-world Arduino simulation prototypes and configured active router network environments.</p>
+        </div>
+
+        <div class="bg-gray-900/60 border border-gray-800 p-6 rounded-2xl hover:border-purple-500/50 transition glow-hover space-y-2">
+            <span class="text-2xl">🎙️</span>
+            <h3 class="font-bold text-gray-100 text-lg">Voice & Leadership</h3>
+            <p class="text-gray-400 text-xs leading-relaxed">Combine tech wizardry with top-tier public speaking, MUN debates, and podcast hosting abilities.</p>
+        </div>
+
     </div>
 
 </main>
 
 <!-- Footer -->
 <footer class="text-center py-6 text-xs text-gray-500 border-t border-gray-900">
-    <p>© 2026 Tanisha Patel. All rights reserved. ✨</p>
+    <p>© 2026 Tanisha Patel. Designed & Built with passion. ✨</p>
 </footer>
 
 </body>
