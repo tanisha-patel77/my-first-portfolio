@@ -11,75 +11,77 @@
 <body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
 <!-- Navbar -->
-<nav class="flex justify-between items-center px-8 py-6 max-w-4xl mx-auto w-full">
-    <h1 class="text-xl font-bold tracking-wider text-purple-400">Tanisha Patel</h1>
-    <div class="space-x-6 text-sm">
+<nav class="flex justify-between items-center px-8 py-6 max-w-5xl mx-auto w-full">
+    <a href="{% url 'home' %}" class="text-xl font-bold text-purple-400">
+        Tanisha Patel
+    </a>
+    <div class="space-x-6 text-sm font-medium">
         <a href="{% url 'home' %}" class="hover:text-purple-400 transition">Home</a>
-        <a href="{% url 'about_me' %}" class="text-purple-400 font-medium">About</a>
+        <a href="{% url 'about_me' %}" class="text-purple-400 border-b-2 border-purple-400 pb-1">About</a>
         <a href="{% url 'contact' %}" class="hover:text-purple-400 transition">Contact</a>
     </div>
 </nav>
 
 <!-- About Content Section -->
-<main class="max-w-4xl mx-auto px-8 py-12 space-y-12 w-full">
+<main class="max-w-5xl mx-auto px-8 py-10 space-y-12 w-full">
 
     <!-- Background Story & Passion -->
     <div class="space-y-4">
         <h2 class="text-3xl font-bold text-purple-400">About Me</h2>
         <p class="text-gray-300 leading-relaxed">
-            I am a 17-year-old student currently living in Rwanda. Born and brought up in Kenya with roots originating from India, my multicultural background gives me a unique perspective on community, leadership, and problem-solving.
+            I am a 17-year-old student living in Rwanda. Born and brought up in Kenya with roots originating from India, my multicultural background gives me a unique perspective on community, leadership, and problem-solving.
         </p>
         <p class="text-gray-300 leading-relaxed">
-            My passion for computer science runs deep—everyone at school knows it's my absolute favorite domain! Having scored a <strong class="text-purple-300">95% A* in IGCSE Computer Science</strong>, I am fully focused on a journey toward becoming a software engineer. Beyond writing code, I love diving into hands-on technology: I have configured routers, worked extensively with computer networking, tinkered with hardware like Arduino, and solved complex logic problems.
+            My passion for computer science runs deep—everyone at school knows it's my absolute favorite domain! Having scored a <strong class="text-purple-300">95% A* in IGCSE Computer Science</strong>, I am fully focused on my path to becoming a future software engineer. Beyond theory and code, I love hands-on work: I have configured routers, worked on computer networking, tinkered with hardware like Arduino, and solved complex real-world logic problems.
         </p>
     </div>
 
     <!-- Technical Image & Networking Section -->
-    <div class="flex flex-col md:flex-row items-center gap-6 bg-gray-900/60 border border-gray-800 p-6 rounded-2xl">
+    <div class="flex flex-col md:flex-row items-center gap-6 bg-gray-900 border border-gray-800 p-6 rounded-2xl">
         <div class="w-full md:w-1/2 rounded-xl overflow-hidden border border-purple-500/30">
-            <img src="{% static 'image_9017fe.jpg' %}" alt="Tanisha working on hardware and technical projects" class="w-full h-auto object-cover">
+            <img src="{% static 'image_9017fe.jpg' %}" alt="Tanisha working on technical project" class="w-full h-auto object-cover">
         </div>
         <div class="space-y-3 w-full md:w-1/2">
             <span class="text-xs text-purple-400 font-semibold">TECHNICAL HANDS-ON WORK</span>
-            <h3 class="text-xl font-semibold text-gray-200">Hardware, Routing & Problem Solving</h3>
+            <h3 class="text-xl font-semibold text-gray-100">Hardware, Routing & Problem Solving</h3>
             <p class="text-gray-400 text-sm leading-relaxed">
-                Whether it's configuring routers, understanding network topologies, or troubleshooting hardware components, I love bridging the gap between theoretical computing and real-world implementation.
+                Whether it's configuring routers, working with networking cables, or troubleshooting hardware components, I love connecting theoretical computing logic with physical implementation.
             </p>
         </div>
     </div>
 
-    <!-- 3 Highlight Cards (Public Speaking, Podcast, Arduino) -->
+    <!-- 3 Highlight Cards -->
     <div class="space-y-4">
-        <h3 class="text-xl font-semibold text-purple-300">Highlights & Projects</h3>
+        <h3 class="text-xl font-semibold text-purple-300">Highlights & Accomplishments</h3>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-            <!-- Card 1: Public Speaking & MUN -->
+            <!-- Card 1: Public Speaking -->
             <div class="bg-gray-900 border border-gray-800 p-5 rounded-xl space-y-3 flex flex-col justify-between">
                 <div class="space-y-2">
                     <span class="text-xs text-purple-400 font-semibold">LEADERSHIP</span>
                     <h4 class="font-bold text-gray-200">Public Speaking & MUN</h4>
                     <p class="text-gray-400 text-xs leading-relaxed">
-                        Attended Model United Nations (MUN) and hosted numerous school events. My hosting contributions are proudly featured on the school platform.
+                        Attended Model United Nations (MUN) and hosted numerous school events. My hosting contributions are proudly featured on the official school website.
                     </p>
                 </div>
                 <div class="pt-2">
-                    <a href="https://www.pathtosuccess.co.rw/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-lg font-medium transition">
+                    <a href="https://www.pathtosuccess.co.rw/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition">
                         Visit School Website ↗
                     </a>
                 </div>
             </div>
 
-            <!-- Card 2: Podcast / YouTube Feature -->
+            <!-- Card 2: Podcast -->
             <div class="bg-gray-900 border border-gray-800 p-5 rounded-xl space-y-3 flex flex-col justify-between">
                 <div class="space-y-2">
                     <span class="text-xs text-purple-400 font-semibold">MEDIA</span>
                     <h4 class="font-bold text-gray-200">School Diaries Podcast</h4>
                     <p class="text-gray-400 text-xs leading-relaxed">
-                        Took part in an engaging podcast highlighting student life, academics, and experiences at school, featured on YouTube.
+                        Took part in an engaging podcast discussing student experiences and academic life, featured on YouTube.
                     </p>
                 </div>
                 <div class="pt-2">
-                    <a href="https://www.youtube.com/watch?v=taLbVNhGbg0&t=130s" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-lg font-medium transition">
+                    <a href="https://www.youtube.com/watch?v=taLbVNhGbg0&t=130s" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition">
                         Watch on YouTube ↗
                     </a>
                 </div>
@@ -91,25 +93,25 @@
                     <span class="text-xs text-purple-400 font-semibold">HARDWARE</span>
                     <h4 class="font-bold text-gray-200">Arduino Speed Simulation</h4>
                     <p class="text-gray-400 text-xs leading-relaxed">
-                        Built a car speed detection simulation inspired by Sophia in Rwanda, blending physical microcontrollers with programming logic.
+                        Built a car speed detection simulation inspired by Sophia in Rwanda, blending microcontrollers with programming logic.
                     </p>
                 </div>
                 <div class="pt-2">
-                    <a href="https://www.instagram.com/path.to.success.school/reel/DZWqLQRMfa7/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3 py-1.5 rounded-lg font-medium transition">
+                    <a href="https://www.instagram.com/path.to.success.school/reel/DZWqLQRMfa7/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition">
                         Watch Instagram Reel ↗
                     </a>
                 </div>
             </div>
 
         </div>
-        <p class="text-gray-400 text-xs pt-2 italic">Building projects and taking the stage have taught me how to combine technical execution with confident communication.</p>
+        <p class="text-gray-400 text-xs pt-1 italic">Building projects and presenting on stage have helped me bridge technical skills with public communication.</p>
     </div>
 
     <!-- Skills Section -->
     <div class="space-y-4">
-        <h3 class="text-xl font-semibold text-purple-300">Skills & Expertise</h3>
+        <h3 class="text-xl font-semibold text-purple-300">Skills & Focus Areas</h3>
         <div class="flex flex-wrap gap-3">
-            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Computer Science (95% A*)</span>
+            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">IGCSE Computer Science (95% A*)</span>
             <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Router Configuration & Networking</span>
             <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Arduino & Hardware</span>
             <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Public Speaking & Event Hosting</span>
@@ -119,10 +121,10 @@
     </div>
 
     <!-- Hobbies & Interests -->
-    <div class="space-y-4">
-        <h3 class="text-xl font-semibold text-purple-300">Beyond the Screen (Hobbies)</h3>
-        <p class="text-gray-400 text-sm leading-relaxed">
-            When I am not coding, configuring networks, or speaking on stage, you can find me exploring my creative and active sides. I love <strong class="text-purple-200">cooking</strong> up new recipes, writing lines of code for fun <strong class="text-purple-200">programming</strong> projects, <strong class="text-purple-200">painting</strong>, and staying active through <strong class="text-purple-200">basketball, volleyball, and badminton</strong>!
+    <div class="space-y-3">
+        <h3 class="text-xl font-semibold text-purple-300">Hobbies & Interests</h3>
+        <p class="text-gray-300 text-sm leading-relaxed">
+            When I am not coding, configuring networks, or speaking on stage, I love staying creative and active. My hobbies include <strong class="text-purple-300">cooking</strong> up new recipes, <strong class="text-purple-300">programming</strong> fun projects, <strong class="text-purple-300">painting</strong>, and playing sports like <strong class="text-purple-300">basketball, volleyball, and badminton</strong>!
         </p>
     </div>
 

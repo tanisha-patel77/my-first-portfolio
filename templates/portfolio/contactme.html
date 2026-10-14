@@ -10,32 +10,34 @@
 <body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
 <!-- Navbar -->
-<nav class="flex justify-between items-center px-8 py-6 max-w-4xl mx-auto w-full">
-    <h1 class="text-xl font-bold tracking-wider text-purple-400">Tanisha Patel</h1>
-    <div class="space-x-6 text-sm">
+<nav class="flex justify-between items-center px-8 py-6 max-w-5xl mx-auto w-full">
+    <a href="{% url 'home' %}" class="text-xl font-bold text-purple-400">
+        Tanisha Patel
+    </a>
+    <div class="space-x-6 text-sm font-medium">
         <a href="{% url 'home' %}" class="hover:text-purple-400 transition">Home</a>
         <a href="{% url 'about_me' %}" class="hover:text-purple-400 transition">About</a>
-        <a href="{% url 'contact' %}" class="text-purple-400 font-medium">Contact</a>
+        <a href="{% url 'contact' %}" class="text-purple-400 border-b-2 border-purple-400 pb-1">Contact</a>
     </div>
 </nav>
 
 <!-- Contact Content Section -->
-<main class="max-w-4xl mx-auto px-8 py-12 space-y-8 w-full">
+<main class="max-w-5xl mx-auto px-8 py-10 space-y-8 w-full">
     <div>
         <h2 class="text-3xl font-bold text-purple-400 mb-2">Get In Touch</h2>
-        <p class="text-gray-400 text-sm">Have a question, collaboration idea, or just want to say hi? Send me a message below or reach out directly!</p>
+        <p class="text-gray-400 text-sm">Have a question, collaboration idea, or want to connect? Send me a message below or email me directly!</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Contact Form -->
-        <form action="#" method="POST" class="bg-gray-900/60 border border-gray-800 p-6 rounded-2xl space-y-4">
+        <form action="#" method="POST" class="bg-gray-900 border border-gray-800 p-6 rounded-2xl space-y-4">
             <div>
                 <label class="block text-xs font-semibold text-purple-300 mb-1">YOUR NAME</label>
-                <input type="text" required placeholder="John Doe" class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-2.5 text-sm text-gray-100 focus:outline-none focus:border-purple-500">
+                <input type="text" required placeholder="Enter your name" class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-2.5 text-sm text-gray-100 focus:outline-none focus:border-purple-500">
             </div>
             <div>
                 <label class="block text-xs font-semibold text-purple-300 mb-1">YOUR EMAIL</label>
-                <input type="email" required placeholder="john@example.com" class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-2.5 text-sm text-gray-100 focus:outline-none focus:border-purple-500">
+                <input type="email" required placeholder="Enter your email" class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-2.5 text-sm text-gray-100 focus:outline-none focus:border-purple-500">
             </div>
             <div>
                 <label class="block text-xs font-semibold text-purple-300 mb-1">MESSAGE</label>
@@ -46,7 +48,7 @@
             </button>
         </form>
 
-        <!-- Direct Links Cards -->
+        <!-- Direct Contact Info -->
         <div class="space-y-4 flex flex-col justify-center">
             <div class="flex items-center gap-3 bg-gray-900 border border-gray-800 p-4 rounded-xl">
                 <span class="text-purple-400 font-bold">📧 Email:</span>

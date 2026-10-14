@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="trying to fix the server eror againn">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/portfolio/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/portfolio/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="b98918d3-06bb-4c7c-a341-29f0ee145aa3" name="Changes" comment="updated index" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +124,7 @@
       <workItem from="1791987653351" duration="300000" />
       <workItem from="1791988523954" duration="51000" />
       <workItem from="1792001732520" duration="943000" />
-      <workItem from="1792012361367" duration="755000" />
+      <workItem from="1792012361367" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="first attempt of a portfolio">
       <option name="closed" value="true" />
@@ -257,7 +254,23 @@
       <option name="project" value="LOCAL" />
       <updated>1792002142682</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated all my pages">
+      <option name="closed" value="true" />
+      <created>1792013420595</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1792013420595</updated>
+    </task>
+    <task id="LOCAL-00018" summary="updated index">
+      <option name="closed" value="true" />
+      <created>1792013761630</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1792013761632</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +288,8 @@
     <MESSAGE value="again trying to put the image" />
     <MESSAGE value="trying to fix the server eror" />
     <MESSAGE value="trying to fix the server eror againn" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to fix the server eror againn" />
+    <MESSAGE value="updated all my pages" />
+    <MESSAGE value="updated index" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated index" />
   </component>
 </project>
