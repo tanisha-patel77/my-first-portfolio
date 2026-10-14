@@ -8,5 +8,5 @@ def home(request):
 def contact(request):
     return render(request,'portfolio/contactme.html')
 
-def aboutme(request):
+def about_me(request):
     return render(request, 'portfolio/about_me.html')
