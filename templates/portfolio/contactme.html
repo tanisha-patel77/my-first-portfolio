@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,19 +11,25 @@
 <body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
 <!-- Navbar -->
-<nav class="flex justify-between items-center px-8 py-6 max-w-5xl mx-auto w-full">
-    <a href="{% url 'home' %}" class="text-xl font-bold text-purple-400">
-        Tanisha Patel
+<nav class="flex flex-col sm:flex-row justify-between items-center gap-4 px-6 sm:px-8 py-6 max-w-5xl mx-auto w-full">
+    <!-- Name + Logo Link -->
+    <a href="{% url 'home' %}" class="flex items-center gap-3 hover:opacity-90 transition">
+        <div class="w-9 h-9 rounded-xl bg-purple-600 flex items-center justify-center text-white font-black text-sm shadow-md shadow-purple-900/50 shrink-0">
+            TP
+        </div>
+        <span class="text-xl font-bold text-purple-400">Tanisha Patel</span>
     </a>
-    <div class="space-x-6 text-sm font-medium">
+
+    <!-- Navigation Links -->
+    <div class="flex items-center space-x-6 text-sm font-medium">
         <a href="{% url 'home' %}" class="hover:text-purple-400 transition">Home</a>
         <a href="{% url 'about_me' %}" class="hover:text-purple-400 transition">About</a>
-        <a href="{% url 'contact' %}" class="text-purple-400 border-b-2 border-purple-400 pb-1">Contact</a>
+        <a href="{% url 'contact' %}" class="text-purple-400 border-b-2 border-purple-400 pb-0.5">Contact</a>
     </div>
 </nav>
 
 <!-- Contact Content Section -->
-<main class="max-w-5xl mx-auto px-8 py-10 space-y-8 w-full">
+<main class="max-w-5xl mx-auto px-6 sm:px-8 py-8 sm:py-10 space-y-8 w-full">
     <div>
         <h2 class="text-3xl font-bold text-purple-400 mb-2">Get In Touch</h2>
         <p class="text-gray-400 text-sm">Have a question, collaboration idea, or want to connect? Send me a message below or email me directly!</p>

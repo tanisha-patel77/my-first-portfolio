@@ -11,19 +11,25 @@
 <body class="bg-gray-950 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
 <!-- Navbar -->
-<nav class="flex justify-between items-center px-8 py-6 max-w-5xl mx-auto w-full">
-    <a href="{% url 'home' %}" class="text-xl font-bold text-purple-400">
-        Tanisha Patel
+<nav class="flex flex-col sm:flex-row justify-between items-center gap-4 px-6 sm:px-8 py-6 max-w-5xl mx-auto w-full">
+    <!-- Name + Logo Link -->
+    <a href="{% url 'home' %}" class="flex items-center gap-3 hover:opacity-90 transition">
+        <div class="w-9 h-9 rounded-xl bg-purple-600 flex items-center justify-center text-white font-black text-sm shadow-md shadow-purple-900/50 shrink-0">
+            TP
+        </div>
+        <span class="text-xl font-bold text-purple-400">Tanisha Patel</span>
     </a>
-    <div class="space-x-6 text-sm font-medium">
+
+    <!-- Navigation Links -->
+    <div class="flex items-center space-x-6 text-sm font-medium">
         <a href="{% url 'home' %}" class="hover:text-purple-400 transition">Home</a>
-        <a href="{% url 'about_me' %}" class="text-purple-400 border-b-2 border-purple-400 pb-1">About</a>
+        <a href="{% url 'about_me' %}" class="text-purple-400 border-b-2 border-purple-400 pb-0.5">About</a>
         <a href="{% url 'contact' %}" class="hover:text-purple-400 transition">Contact</a>
     </div>
 </nav>
 
 <!-- About Content Section -->
-<main class="max-w-5xl mx-auto px-8 py-10 space-y-12 w-full">
+<main class="max-w-5xl mx-auto px-6 sm:px-8 py-8 sm:py-10 space-y-12 w-full">
 
     <!-- Background Story & Passion -->
     <div class="space-y-4">
@@ -38,8 +44,8 @@
 
     <!-- Technical Image & Networking Section -->
     <div class="flex flex-col md:flex-row items-center gap-6 bg-gray-900 border border-gray-800 p-6 rounded-2xl">
-        <div class="w-full md:w-1/2 rounded-xl overflow-hidden border border-purple-500/30">
-            <img src="{% static 'image_9017fe.jpg' %}" alt="Tanisha working on technical project" class="w-full h-auto object-cover">
+        <div class="w-full md:w-1/2 rounded-xl overflow-hidden border border-purple-500/30 shrink-0">
+            <img src="{% static 'image_9017fe.jpg' %}" alt="Tanisha working on technical project" class="w-full h-auto max-h-72 object-cover">
         </div>
         <div class="space-y-3 w-full md:w-1/2">
             <span class="text-xs text-purple-400 font-semibold">TECHNICAL HANDS-ON WORK</span>
@@ -53,7 +59,7 @@
     <!-- 3 Highlight Cards -->
     <div class="space-y-4">
         <h3 class="text-xl font-semibold text-purple-300">Highlights & Accomplishments</h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
             <!-- Card 1: Public Speaking -->
             <div class="bg-gray-900 border border-gray-800 p-5 rounded-xl space-y-3 flex flex-col justify-between">
@@ -65,7 +71,7 @@
                     </p>
                 </div>
                 <div class="pt-2">
-                    <a href="https://www.pathtosuccess.co.rw/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition">
+                    <a href="https://www.pathtosuccess.co.rw/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition w-full text-center sm:w-auto">
                         Visit School Website ↗
                     </a>
                 </div>
@@ -81,14 +87,14 @@
                     </p>
                 </div>
                 <div class="pt-2">
-                    <a href="https://www.youtube.com/watch?v=taLbVNhGbg0&t=130s" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition">
+                    <a href="https://www.youtube.com/watch?v=taLbVNhGbg0&t=130s" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition w-full text-center sm:w-auto">
                         Watch on YouTube ↗
                     </a>
                 </div>
             </div>
 
             <!-- Card 3: Arduino Project -->
-            <div class="bg-gray-900 border border-gray-800 p-5 rounded-xl space-y-3 flex flex-col justify-between">
+            <div class="bg-gray-900 border border-gray-800 p-5 rounded-xl space-y-3 flex flex-col justify-between sm:col-span-2 md:col-span-1">
                 <div class="space-y-2">
                     <span class="text-xs text-purple-400 font-semibold">HARDWARE</span>
                     <h4 class="font-bold text-gray-200">Arduino Speed Simulation</h4>
@@ -97,7 +103,7 @@
                     </p>
                 </div>
                 <div class="pt-2">
-                    <a href="https://www.instagram.com/path.to.success.school/reel/DZWqLQRMfa7/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition">
+                    <a href="https://www.instagram.com/path.to.success.school/reel/DZWqLQRMfa7/" target="_blank" class="inline-block text-xs bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 rounded-lg font-medium transition w-full text-center sm:w-auto">
                         Watch Instagram Reel ↗
                     </a>
                 </div>
@@ -110,13 +116,13 @@
     <!-- Skills Section -->
     <div class="space-y-4">
         <h3 class="text-xl font-semibold text-purple-300">Skills & Focus Areas</h3>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">IGCSE Computer Science (95% A*)</span>
-            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Router Configuration & Networking</span>
-            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Arduino & Hardware</span>
-            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Public Speaking & Event Hosting</span>
-            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">Model United Nations (MUN)</span>
-            <span class="bg-gray-900 border border-purple-500/30 px-4 py-1.5 rounded-full text-sm text-purple-300">HTML & Tailwind CSS</span>
+        <div class="flex flex-wrap gap-2.5">
+            <span class="bg-gray-900 border border-purple-500/30 px-3.5 py-1.5 rounded-full text-xs sm:text-sm text-purple-300">IGCSE Computer Science (95% A*)</span>
+            <span class="bg-gray-900 border border-purple-500/30 px-3.5 py-1.5 rounded-full text-xs sm:text-sm text-purple-300">Router Configuration & Networking</span>
+            <span class="bg-gray-900 border border-purple-500/30 px-3.5 py-1.5 rounded-full text-xs sm:text-sm text-purple-300">Arduino & Hardware</span>
+            <span class="bg-gray-900 border border-purple-500/30 px-3.5 py-1.5 rounded-full text-xs sm:text-sm text-purple-300">Public Speaking & Event Hosting</span>
+            <span class="bg-gray-900 border border-purple-500/30 px-3.5 py-1.5 rounded-full text-xs sm:text-sm text-purple-300">Model United Nations (MUN)</span>
+            <span class="bg-gray-900 border border-purple-500/30 px-3.5 py-1.5 rounded-full text-xs sm:text-sm text-purple-300">HTML & Tailwind CSS</span>
         </div>
     </div>
 
