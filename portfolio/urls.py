@@ -25,6 +25,6 @@ urlpatterns = [
 
     path('contactme/',views.contact,name='contact'),
 
-    path('aboutme/',views.aboutme,name='aboutme'),
+    path('aboutme/',views.aboutme,name='about_me'),
 
 ]
