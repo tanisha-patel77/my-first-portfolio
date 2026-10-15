@@ -5,7 +5,7 @@ from django.shortcuts import render
 def home(request):
     return render(request,'portfolio/index.html')
 
-def contact(request):
+def contact_me(request):
     return render(request,'portfolio/contactme.html')
 
 def about_me(request):
